@@ -143,6 +143,10 @@ class CheckOutScreen extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(vertical: 10.0),
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25.0))),
                     child: const Text(
                       'PAY',
                       style: TextStyle(
@@ -150,10 +154,6 @@ class CheckOutScreen extends StatelessWidget {
                           fontSize: 27,
                           color: Colors.white),
                     ),
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25.0))),
                   ),
                 )
               ],

@@ -25,10 +25,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
         PersistentBottomNavBarItem(
             icon: Icon(Icons.home_outlined, color: Colors.black)),
         PersistentBottomNavBarItem(
-          icon: Image.asset('assets/map.png', height: 20,width:25)
+          icon: Image.asset('assets/images/map.png', height: 20,width:25)
         ),
         PersistentBottomNavBarItem(
-          icon:  Image.asset('assets/icons8-card-wallet-24.png',height: 20,width:25 )
+          icon:  Image.asset('assets/images/icons8-card-wallet-24.png',height: 20,width:25 )
         ),
         PersistentBottomNavBarItem(
           icon: Icon(CupertinoIcons.settings_solid, color: Colors.black),

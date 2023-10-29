@@ -38,7 +38,7 @@ class CustomListTile extends StatelessWidget {
                     width: 60,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: NetworkImage(imgUrl), fit: BoxFit.contain),
+                          image: NetworkImage(imgUrl), fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(10.0),
                       border: Border.all(color: Colors.teal, width: 1.5),
                     ),
@@ -69,7 +69,7 @@ class CustomListTile extends StatelessWidget {
                       index.isOdd ? oddTitle : trailingText,
                       style: TextStyle(
                           color: index.isOdd ? Colors.black : Colors.white,
-                          fontSize: 16),
+                          fontSize: 14,),
                       textAlign: TextAlign.center,
                     ),
                   )

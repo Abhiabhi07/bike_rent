@@ -10,7 +10,11 @@ class HeaderWidget extends StatelessWidget {
       child: Column(
         children: <Widget>[
           const ListTile(
-            leading: CircleAvatar(radius: 27, backgroundColor: Colors.amber),
+            leading: CircleAvatar(
+              radius: 27,
+              backgroundImage: NetworkImage(
+                  'https://cdn-icons-png.flaticon.com/128/3177/3177440.png'),
+            ),
             title: Text(
               'Welcome',
               style: TextStyle(
@@ -42,7 +46,10 @@ class HeaderWidget extends StatelessWidget {
                 ),
                 Text(
                   'Search Bike',
-                  style: TextStyle(color: Colors.grey, fontSize: 20, fontWeight: FontWeight.w500),
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500),
                 )
               ],
             ),

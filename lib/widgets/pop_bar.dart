@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class PopBar extends StatelessWidget {
   const PopBar({super.key, required this.title, this.onTap});
+
   final String title;
   final void Function()? onTap;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,25 +17,25 @@ class PopBar extends StatelessWidget {
             onTap: onTap,
             child: Container(
               height: 30,
-              padding: EdgeInsets.all(5.0),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(5.0),
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: LinearGradient(
-                  begin: Alignment.topLeft,
+                  begin: Alignment.bottomLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Colors.black,
-                    Colors.white,
+                    Colors.black38,
+                    Colors.white10,
                   ],
                 ),
               ),
-              child: Icon(
+              child: const Icon(
                 Icons.arrow_back_rounded,
                 size: 25,
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Expanded(
@@ -47,7 +49,7 @@ class PopBar extends StatelessWidget {
               alignment: Alignment.center,
               child: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),

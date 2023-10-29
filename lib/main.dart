@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: GoogleFonts.roboto().fontFamily,
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        fontFamily: 'Roboto',
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           showSelectedLabels: false,
           showUnselectedLabels: false,
           unselectedIconTheme: IconThemeData(color: Colors.black, size: 27),

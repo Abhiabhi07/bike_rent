@@ -38,8 +38,8 @@ class PopularItem extends StatelessWidget {
                 child: Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(bike.imgUrl), fit: BoxFit.cover),
-                  borderRadius: BorderRadius.only(
+                      image: NetworkImage(bike.coverImgUrl!), fit: BoxFit.cover),
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(
                         20.0,
                       ),
@@ -57,11 +57,12 @@ class PopularItem extends StatelessWidget {
                 children: [
                   Text(
                     bike.title,
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                   Text(
                     bike.comp,
-                    style: GoogleFonts.robotoSlab(
+                    style: const TextStyle(
+                      fontFamily: 'RobotoSlab',
                         fontWeight: FontWeight.w400, fontSize: 18),
                   ),
                   SubtitleText(title: bike.price)

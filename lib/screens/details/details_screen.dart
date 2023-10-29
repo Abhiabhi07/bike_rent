@@ -21,7 +21,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: SingleChildScrollView(
-            controller: scrollController,
+        controller: scrollController,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -42,7 +42,7 @@ class DetailsScreen extends StatelessWidget {
             ),
             const TitleText(title: 'Add', subtitle: 'items'),
             ListView.builder(
-              controller: scrollController,
+                controller: scrollController,
                 itemCount: bikes.addItems.length,
                 shrinkWrap: true,
                 itemBuilder: (ctx, index) {

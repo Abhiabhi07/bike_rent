@@ -34,7 +34,7 @@ class Bikes {
         displacement: 1080,
         maxSpeed: 128,
         imgUrl:
-            'https://ultimatemotorcycling.com/wp-content/uploads/2020/11/2021-Honda-Rebel-1100-First-Look-cruiser-motorcycle-DCT-1.jpg',
+            'https://powersports.honda.com/-/media/feature/powersports/dct/model-module/dct-2023-rebel-1100-model.png',
         title: 'Rebel 1100',
         comp: 'Honda',
         price: 1199)
