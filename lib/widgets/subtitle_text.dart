@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class SubtitleText extends StatelessWidget {
   const   SubtitleText({super.key, required this.title, this.color,
@@ -13,14 +13,16 @@ class SubtitleText extends StatelessWidget {
     return RichText(
         text: TextSpan(
             text: '$title/',
-            style: GoogleFonts.risque(
+            style: TextStyle(
+              fontFamily: 'Risque',
                 fontWeight: FontWeight.w500,
                 color: color ?? Colors.black,
                 fontSize: 16),
             children:  [
               TextSpan(
                   text: 'per day',
-                  style: GoogleFonts.roboto(
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
                     fontWeight: FontWeight.w300,
                   ))
             ]));

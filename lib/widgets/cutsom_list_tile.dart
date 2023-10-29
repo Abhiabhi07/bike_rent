@@ -38,7 +38,7 @@ class CustomListTile extends StatelessWidget {
                     width: 60,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: NetworkImage(imgUrl), fit: BoxFit.cover),
+                          image: AssetImage(imgUrl), fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(10.0),
                       border: Border.all(color: Colors.teal, width: 1.5),
                     ),

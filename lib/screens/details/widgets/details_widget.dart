@@ -1,6 +1,5 @@
 import 'package:assignment_bike_rent/models/bike.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../widgets/subtitle_text.dart';
 import 'custom_chip.dart';
@@ -73,7 +72,7 @@ class DetailsWidget extends StatelessWidget {
                   ),
                   Positioned(
                     right: 0.0,
-                    child: Image.network(
+                    child: Image.asset(
                       bike.imgUrl,
                       height: 210,
                       width: 210,

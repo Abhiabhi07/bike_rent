@@ -1,9 +1,8 @@
 import 'package:assignment_bike_rent/models/bike.dart';
-import 'package:assignment_bike_rent/models/bikes.dart';
+
 import 'package:assignment_bike_rent/screens/details/details_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../widgets/subtitle_text.dart';
 
@@ -38,7 +37,8 @@ class PopularItem extends StatelessWidget {
                 child: Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(bike.coverImgUrl!), fit: BoxFit.cover),
+                      image: AssetImage(bike.coverImgUrl!),
+                      fit: BoxFit.cover),
                   borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(
                         20.0,
@@ -57,13 +57,15 @@ class PopularItem extends StatelessWidget {
                 children: [
                   Text(
                     bike.title,
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                   Text(
                     bike.comp,
                     style: const TextStyle(
-                      fontFamily: 'RobotoSlab',
-                        fontWeight: FontWeight.w400, fontSize: 18),
+                        fontFamily: 'RobotoSlab',
+                        fontWeight: FontWeight.w400,
+                        fontSize: 18),
                   ),
                   SubtitleText(title: bike.price)
                 ],
